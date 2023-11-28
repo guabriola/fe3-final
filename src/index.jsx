@@ -6,6 +6,7 @@ import App from './App'
 import Home from './Routes/Home'
 import Favs from './Routes/Favs'
 import Contact from './Routes/Contact'
+import Detail from './Routes/Detail'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -13,9 +14,10 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<App/>}>
-        <Route path='/Routes/Home' element={<Home/>} />
-        <Route path='/Routes/Favs' element={<Favs/>} />
-        <Route path='/Routes/Contact' element={<Contact/>} />
+          <Route path='/' element={<Home/>} />
+          <Route path='Favs' element={<Favs/>} />
+          <Route path='Contact' element={<Contact/>} />
+          <Route path='Detail/:id' element={<Detail/>} />
         </Route>
       </Routes>
     </BrowserRouter>
