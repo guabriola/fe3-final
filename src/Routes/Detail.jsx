@@ -18,11 +18,11 @@ const Detail = () => {
 
   return (
     <>
-      <h1>Detail Dentist</h1>
-      <h3>{doctor.name}</h3>
-      <h3>{doctor.email}</h3>
-      <h3>{doctor.website}</h3>
-      <h3>{doctor.phone}</h3>
+      <h1>DR. {doctor.name} </h1>
+      <img src="public/images/doctor.jpg"/>
+      <h3>Email: {doctor.email}</h3>
+      <h3>WebSite: {doctor.website}</h3>
+      <h3>Phone: {doctor.phone}</h3>
       {/* aqui deberan renderizar la informacion en detalle de un user en especifico */}
       {/* Deberan mostrar el name - email - phone - website por cada user en especifico */}
     </>
