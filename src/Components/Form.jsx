@@ -87,7 +87,7 @@ const Form = () => {
         show ? 
           <div>
             <h3>Thanks {userName}, we will contact you as soon as possible via email`</h3>
-            <Link to="/Routes/Contact" >Ask Again</Link>
+            <Link to="/" >Volver</Link>
           </div>
           : null
       }
