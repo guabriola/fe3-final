@@ -47,7 +47,7 @@ const Form = () => {
       console.log(`Query: ${userAsk}`)
       setShow(true)
       setError(false)
-      //alert(`Thanks ${userName}, we will contact you as soon as possible via email`);
+      
     } else {
       setError(true)
       }

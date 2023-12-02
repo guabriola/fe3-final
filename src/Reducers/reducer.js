@@ -3,9 +3,9 @@ export const reducer = (state, action) => {
         case 'GET_DOCTORS':
             return {...state, list: action.payload}
         case 'ADD_FAV': 
-            return {...state, favs: [...state.favs, action.payload]} //Acá primero copiamos lo que ya está en Favs y sumamos el nuevo favorito
+            return {...state, favs: [...state.favs, action.payload]}
         case 'CHANGE_THEME':
-            return {} //INCOMPLETO
+            return {...state, theme: action.payload} 
         case 'GET_DOCTOR':
             return {} //INCOMPLETO
         case 'DEL_FAV': 

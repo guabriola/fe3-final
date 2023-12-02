@@ -6,10 +6,11 @@ const Favs = () => {
   const {state} = useDocStates();
 
   return (
-
-    <div className="card-grid">
+    <div>
       <h1>Favorite Dentists</h1>
+      <div className="card-grid">
         {state.favs.map(item => <Card item={item} key={item.id}/>)}
+      </div>
     </div>
 
   );

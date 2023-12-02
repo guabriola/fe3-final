@@ -24,9 +24,10 @@ const Card = ({item}) => {
 
           {/* No debes olvidar que la Card a su vez servira como Link hacia la pagina de detalle */}
           <img src="../images/doctor.jpg" alt='Imagen del Doctor'/>
-          <h3>{item.name}</h3>
-          <h4>{item.username}</h4>
-          <h4>ID: {item.id}</h4>
+          <div>
+            <h3>{item.name}</h3>
+            <h4>Username: {item.username}</h4>
+          </div>
           {/* Ademas deberan integrar la logica para guardar cada Card en el localStorage */}
         </Link>
           <button onClick={addOrDelFav} className="favButton">
