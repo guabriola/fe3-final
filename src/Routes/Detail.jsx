@@ -4,7 +4,6 @@ import { useParams } from 'react-router-dom'
 import { Link } from 'react-router-dom'
 import photo from '../images/doctor.jpg'
 
-//Este componente debera ser estilado como "dark" o "light" dependiendo del theme del Context
 
 const Detail = () => {
   const [doctor, setDoctor] = useState({})
@@ -13,10 +12,8 @@ const Detail = () => {
   const url = `https://jsonplaceholder.typicode.com/users/${params.id}`
 
   useEffect(() => {
-    //console.log(url)
     axios(url)
       .then(res => setDoctor(res.data))
-      
   }, )
 
   return (
@@ -29,8 +26,7 @@ const Detail = () => {
         <h3>Phone:</h3> <span>{doctor.phone}</span>
       </div>
       <Link to="/" >Volver</Link>
-      {/* aqui deberan renderizar la informacion en detalle de un user en especifico */}
-      {/* Deberan mostrar el name - email - phone - website por cada user en especifico */}
+
     </div>
   )
 }

@@ -6,8 +6,6 @@ export const reducer = (state, action) => {
             return {...state, favs: [...state.favs, action.payload]}
         case 'CHANGE_THEME':
             return {...state, theme: action.payload} 
-        case 'GET_DOCTOR':
-            return {} //INCOMPLETO
         case 'DEL_FAV': 
             return {...state, favs: state.favs.filter(fav => fav.id !== action.payload.id)}
         default:
