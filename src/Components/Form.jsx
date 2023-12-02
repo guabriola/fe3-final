@@ -85,19 +85,21 @@ const Form = () => {
 
       {
         show ? 
-          <div>
+          <div className="message">
             <h3>Thanks {userName}, we will contact you as soon as possible via email`</h3>
-            <Link to="/" >Volver</Link>
+            <div className="return">
+              <Link to="/" >Back</Link>
+            </div>
           </div>
           : null
       }
       
       {
         error &&  
-          <div>
-            <h5 style={{color: 'red'}}> -The name must have more than 5 letters `</h5>
-            <h5 style={{color: 'red'}}>-The email must be in the correct format `</h5>
-            <h5 style={{color: 'red'}}>-The text must have more than 20 characters and less than 200`</h5>
+          <div className="error">
+            <p style={{color: 'red'}}>-The name must have more than 5 letters</p>
+            <p style={{color: 'red'}}>-The email must be in the correct format</p>
+            <p style={{color: 'red'}}>-The text must have more than 20 characters and less than 200</p>
           </div>
       }
 
